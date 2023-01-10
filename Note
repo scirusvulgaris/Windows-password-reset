@@ -1,0 +1,14 @@
+Step 1: Boot password-forgotten Windows 10 computer from the CD.
+Step 2: Replace files.
+ - On the screen, press Shift + F10 on your keyboard. This will open a CMD window.
+ Run this commands:
+ -> copy d:\windows\system32\utilman.exe d:\
+ -> copy d:\windows\system32\cmd.exe d:\windows\system32\utilman.exe
+ -> wpeutil reboot
+Step 3: Reset Windows 10 password.
+1) After the computer boots up and get to the Windows 10 sign-in screen, click the Ease of Access icon on the lower right corner. This will bring up an utilman.exe window.
+Run this command:
+-> net user <username_you_want_to_change_the_password> <new_password>
+Step 4: copy utilman back to system32
+
+ 
